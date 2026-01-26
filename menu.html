@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Village Mill Coffee Company</title>
+  <meta name="description" content="Menu preview — coming soon." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Village Mill Coffee Company Home">
+      <img src="images/logo.png" alt="Village Mill Coffee Company logo" />
+    </a>
+
+    <button class="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span class="sr-only">Menu</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a class="active" href="menu.html">Menu</a>
+      <a href="info.html">Info</a>
+      <a href="history.html">History of the Mill</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="page-title">
+    <h1>Menu</h1>
+    <p class="muted">Coming soon. Here’s a preview of what we’re building.</p>
+    <hr class="hr" />
+  </div>
+
+  <h2>Drinks</h2>
+  <p class="muted">Espresso • Americano • Latte • Cappuccino • Mocha • Cold Brew • Tea</p>
+
+  <h2>Seasonal</h2>
+  <p class="muted">Rotating specials inspired by the season and the mill.</p>
+
+  <h2>Food</h2>
+  <p class="muted">Light bites coming soon.</p>
+
+  <div class="callout">
+    <strong>Want an opening update?</strong>
+    <div class="cta-row">
+      <a class="button primary" href="contact.html">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>Hours</h3>
+      <p>Coming soon</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>
+        Phone: (555) 555-5555<br />
+        Email: <a href="mailto:hello@villagemillcoffee.com">hello@villagemillcoffee.com</a>
+      </p>
+    </div>
+    <div>
+      <h3>Address</h3>
+      <p>Coming soon<br />Your Village, MI</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Village Mill Coffee Company.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
