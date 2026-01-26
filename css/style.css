@@ -60,12 +60,15 @@ a:hover { text-decoration: underline; }
 
 /* Bigger logo (desktop + mobile) */
 .brand img {
-  height: 177px;
-  width: auto;
+  height: auto;
+  width: 240px;
+  max-width: none; 
 }
 
-@media (max-width: 420px) {   
-   .brand img { height: 116px; }
+@media (max-width: 860px) {   
+   .brand img { 
+      width: 190px; 
+   }
 }
 
 /* Desktop nav */
