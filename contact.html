@@ -4,16 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Village Mill Coffee Company</title>
+  <meta name="description" content="Contact Village Mill Coffee Company." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Village Mill Coffee Company Home">
       <img src="images/logo.png" alt="Village Mill Coffee Company logo" />
     </a>
-    <nav class="nav" aria-label="Primary">
+
+    <button class="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span class="sr-only">Menu</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
       <a href="info.html">Info</a>
@@ -24,28 +33,34 @@
 </header>
 
 <section class="section">
-  <h2>Contact</h2>
-  <p>We’re not open yet, but we’d love to hear from you. Email works best for now.</p>
+  <div class="page-title">
+    <h1>Contact</h1>
+    <p class="muted">We’re not open yet, but we’d love to hear from you.</p>
+    <hr class="hr" />
+  </div>
+
+  <h2>General inquiries</h2>
+  <p class="muted">Email works best right now. If you prefer a call back, include your number in the message.</p>
 
   <div class="callout">
-    <strong>General inquiries:</strong>
+    <strong>Email</strong>
     <div class="cta-row">
-      <a class="button primary" href="mailto:hello@villagemillcoffee.com?subject=Village%20Mill%20Coffee%20Inquiry">Email us</a>
+      <a class="button primary" href="mailto:hello@villagemillcoffee.com?subject=Village%20Mill%20Coffee%20Inquiry">hello@villagemillcoffee.com</a>
     </div>
   </div>
 
   <div id="join-team" class="callout">
     <strong>Interested in joining the team?</strong>
-    <p style="margin:10px 0 0 0;">
-      Send a quick note with your name, role interest (barista / kitchen / manager), and availability.
+    <p class="muted" style="margin-top:10px;">
+      Send your name, the role you’re interested in (barista / kitchen / manager), and your availability.
     </p>
     <div class="cta-row">
       <a class="button" href="mailto:jobs@villagemillcoffee.com?subject=Joining%20the%20Team%20-%20Village%20Mill%20Coffee">Inquire here</a>
     </div>
   </div>
 
-  <p style="margin-top:18px;">
-    Prefer phone? Add your number in the email and we’ll call you back.
+  <p class="muted" style="margin-top:18px;">
+    Phone: (555) 555-5555 (placeholder)
   </p>
 </section>
 
@@ -75,6 +90,7 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
