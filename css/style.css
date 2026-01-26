@@ -377,6 +377,6 @@ a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 420px) {
-  .brand img { height: 52px; }
+  .brand img { height: 177px; }
   .hero { min-height: 340px; }
 }
